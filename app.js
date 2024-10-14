@@ -1,4 +1,3 @@
-
 let personas = [
     {
         dni: '12345678A',
@@ -44,6 +43,13 @@ let animales = [
     }
 ];
 
+let vinculados = [
+    {
+        id:'212221D',
+        dni: '12345678A'
+    }
+];
+
 function mostrarAnimales() {
     let animalHTML = document.getElementById('animals');
     animalHTML.innerHTML = ''; // Limpiar contenido previo
@@ -85,7 +91,36 @@ function mostrarPersonas() {
     });
 }
 
+function vincular(animalID, personaDNI){
+    const animal = animales.find(animal => animal.id === animalID);
+    if (animal) {
+        animal.adoptado = true;
+    }else console.error(`Error: El animal con ID ${animalID} ya está adoptado.`);
+
+    const persona = personas.find(persona => persona.dni === personaDNI);
+    if (persona) {
+        persona.custodias += 1;
+    }
+
+    const nuevoVinculo = {
+        id: animalID,
+        dni: personaDNI
+    };
+    
+    
+    vinculados.push(nuevoVinculo);
+    
+    
+    console.log(vinculados);
+    console.log(animal);
+    console.log(persona);
+
+
+}
+
+
 window.onload = function() {
     mostrarPersonas();
     mostrarAnimales();
+    vincular('212341T','12345678A');
 };
