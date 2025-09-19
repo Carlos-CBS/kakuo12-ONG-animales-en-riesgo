@@ -1,25 +1,43 @@
-# kakuo12-ONG-animales-en-riesgo
+# 🐾 ONG Animales en Riesgo  
 
-Una ONG que es dedica a la adopció de gossos, gats i ocells, vol desenvolupar una aplicació que permet
-assignar els animals a les persones d’acollida. L’aplicació permet associar els animalets a les persones per
-veure quins queden sense acollida i quines persones tenen cap sense acollir Es desitja desenvolupar
-l’aplicació sense cap bastiment JS, és a dir en VanillaJS. Només utilitza tecnologies del costat client per a
-desenvolupar tota la lògica del mateix.
-Un disseny orientatiu és aquest.
+## 📌 Descripción  
 
-Funcionalitats a implementar.
-• Emmagatzematge dels animals i les persones en forma d’objectes amb nom, descripció (i en el
-cas dels animals, imatge), en arrays en el propi JS.
-• L'aplicació disposa d’una primera pàgina de benvinguda.
-• Selecció de la informació per persona i animal.
-• S’ha d’implementar un mecanisme no D&D per a reubicar els animals i reassignar-los entre
-persones.
-• Les persones i els animals ja estan afegits en l’aplicació, no cal fer les altes.
+Este proyecto es una aplicación web desarrollada para una **ONG dedicada a la adopción de animales (perros, gatos y aves)**.  
+El objetivo es ofrecer una herramienta sencilla para **gestionar los animales y asignarlos a las personas de acogida**.  
 
-Característiques del disseny.
-• El disseny de l'aplicació és lliure sempre i quan es respectin les especificacions.
-• Per a desenvolupar-la s'ha decidit utilitzar CAP bastiment JavaScript.
-• Programa les animacions necessàries, i els transicions adients en CSS.
-• Respecta el principi de separació del comportament, contingut i presentació.
-• Documenta correctament el codi font amb JSDoc
-• Valida el document HTML5 http://validator.w3.org/
+La aplicación permite visualizar qué animales están sin acoger, así como qué personas aún no tienen animales asignados.  
+
+> ⚡ Importante: El proyecto se ha desarrollado **únicamente con Vanilla JavaScript**, sin frameworks externos.  
+
+---
+
+## 🚀 Funcionalidades implementadas  
+
+- 🐕 **Gestión de animales y personas** almacenados en arrays de objetos en JavaScript  
+- 🖼️ Cada animal contiene: nombre, descripción e imagen  
+- 👥 Cada persona contiene: nombre y descripción  
+- 👋 Página de bienvenida inicial  
+- 🖱️ **Asignación y reubicación de animales** mediante **drag & drop**  
+- 📊 Visualización de qué animales están sin acoger y qué personas no tienen animales asignados  
+
+---
+
+## 🎨 Características del diseño  
+
+- 💻 **Sin frameworks JavaScript** → todo en VanillaJS  
+- 🖱️ Uso nativo de **drag & drop de HTML5** para asignar animales  
+- 🎬 Animaciones y transiciones realizadas con **CSS**  
+- 🧩 Separación clara entre:  
+  - Contenido (**HTML**)  
+  - Comportamiento (**JavaScript**)  
+  - Presentación (**CSS**)  
+- 📝 Código fuente documentado con **JSDoc**  
+- ✅ Validación del HTML con [W3C Validator](http://validator.w3.org/)  
+
+---
+
+## 🛠️ Tecnologías utilizadas  
+
+- **HTML5** (con API Drag & Drop)  
+- **CSS3** (transiciones, animaciones, estilos responsivos)  
+- **JavaScript (ES6+)** → para la lógica y gestión de datos en arrays  
